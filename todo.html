@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="todo.css">
+    </head>
+    <body>
+        <div class="container">
+          <div class="todo-app">
+            <div class="todo">
+            <h1 class="h1">TODOLIST</h1>
+            <img src="todo.jpg" width="75px" height="75px" id="img"> 
+             </div>
+            <div class="row">
+              <div id="searchContainer">
+              <input type="text" id="input-box" placeholder="Search">
+              <span id="searchIcon">🔍︎</span>
+              </div>
+              <button onclick="addTask()" id="add">Add</button>
+              <button id="AllDeleteBtn">All Delete</button>
+              <button id="sortBtn">A-Z</button>
+            </div>
+            <ul id="list-container">
+            
+                
+            </ul>
+          </div>
+
+        </div>
+        <script src="todo.js"></script>
+    </body>
+</html>

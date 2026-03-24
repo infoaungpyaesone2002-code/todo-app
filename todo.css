@@ -1,0 +1,148 @@
+/* js class name code*/
+
+
+
+
+.close-btn {
+    cursor: pointer;
+    float: right;
+    color: red;
+    font-weight: bold;
+    }
+    #list-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        counter-reset: item;
+        
+    }
+   #list-container li{
+        display: flex;
+         align-items: center;
+         list-style: none;
+         font-size: 17px;
+         cursor: pointer;
+        margin-top: 20px;
+        padding: 12px 8px 12px 50px;
+        user-select: none;
+        border-radius: 10px;
+        position: relative;
+        width: 400px;
+        counter-increment: item;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 3);
+        outline: none;
+}
+.li:focus{
+         background-color: rgb(36, 28, 28);
+         border-bottom: 1px dashed #ccc;
+}
+.li.checked .task-text{
+    text-decoration: line-through;
+    color: #555;
+}
+.task-text{ 
+       display: inline-block;
+       min-width: 50%;
+       outline: none;
+       flex: 1;
+
+}
+.task-text:focus{
+    text-decoration: none !important;
+}
+
+#list-container li::before{
+    content: counter(item) ". ";
+    font-weight: bold;
+}
+#list-container li:nth-child(odd){
+    background-color:rgb(223, 223, 250);
+}
+#list-container li:nth-child(even){
+    background-color: rgb(155, 177, 247);
+}
+/* animation */
+@keyframes spin{
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+#img{
+    animation: spin 3s linear infinite;
+    margin-left: 13.5px;
+}
+/*todobar */
+.todo{
+    display: flex;
+    justify-content: center;
+}
+    .row{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    /* search bar */
+    #input-box{
+        width: 0px;
+        border: none;
+        border-radius: 30px;
+        background-color: whitesmoke;
+        cursor: pointer;
+        outline: none;
+        transition: width 0.5s ease-in-out, padding 0.4s;
+        background: transparent;
+
+    }
+    #input-box.active{
+        width: 300px;
+        padding: 5px 10px;
+    }
+    #searchIcon{
+        cursor: pointer;
+        font-size: 18px;
+        padding: 5px;
+        margin-top: 7px ;
+    }
+    #searchContainer{
+        display: flex;
+        align-items: center;
+        background: #f0f0f0;
+        border-radius: 20px;
+        padding: 5px;
+        width: fit-content;
+    }
+      
+    #add{
+        width: 50px;
+        border: none;
+        border-radius: 20px;
+        background-color:blueviolet;
+        cursor: pointer;
+        color: white;
+        outline: none;
+        margin-left: 5px;
+    }
+    
+    #AllDeleteBtn{
+        width: 70px;
+        border: none;
+        border-radius: 20px;
+        background-color:blueviolet;
+        cursor: pointer;
+        color: white;
+        outline: none;
+        margin-left: 5px;
+    }
+     #sortBtn{
+        width: 70px;
+        border: none;
+        border-radius: 20px;
+        background-color:blueviolet;
+        cursor: pointer;
+        color: white;
+        outline: none;
+        margin-left: 5px;
+     }
