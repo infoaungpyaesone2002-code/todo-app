@@ -1,14 +1,4 @@
 /* js class name code*/
-
-
-
-
-.close-btn {
-    cursor: pointer;
-    float: right;
-    color: red;
-    font-weight: bold;
-    }
     #list-container{
         display: flex;
         flex-direction: column;
@@ -61,6 +51,12 @@
 #list-container li:nth-child(even){
     background-color: rgb(155, 177, 247);
 }
+.close-btn {
+    cursor: pointer;
+    float: right;
+    color: red;
+    font-weight: bold;
+    }
 /* animation */
 @keyframes spin{
     from {
